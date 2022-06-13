@@ -8,3 +8,11 @@
   display: $flexdisplay;
   justify-content: $centerjust;
 }
+
+@mixin spdispcont ($margin, $padding, $flexdisplay, $centerjust) {
+  margin: $margin;
+  padding: $padding;
+  display: $flexdisplay;
+  justify-content: $centerjust;
+}
+

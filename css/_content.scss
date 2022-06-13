@@ -35,9 +35,8 @@ header {
 }
 
 nav ul {
-  @include spacing($zero, $zero);
   list-style-type: $none;
-  @include displaycontent ($flexdisplay, $centerjust);
+  @include spdispcont ($zero, $zero, $flexdisplay, $centerjust);
 }
 
 nav li {
@@ -74,7 +73,7 @@ nav a:hover {
 .main {
   max-width: 1200px;
   @include spacing(0 auto, 2 rem);
-  @include displaycontent ($flexdisplay, $centerjust);
+  @include spdispcont (0 auto, 2 rem, $flexdisplay, $centerjust);
   flex-flow: row wrap;
 
 }
@@ -119,8 +118,7 @@ footer {
 
   ul {
     list-style-type: $none;
-    @include spacing($zero, $zero);
-    @include displaycontent ($flexdisplay, $centerjust);
+    @include spdispcont ($zero, $zero, $flexdisplay, $centerjust);
     flex-flow: row wrap;
 
     a {
