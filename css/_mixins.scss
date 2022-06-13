@@ -1,0 +1,10 @@
+//mixins
+@mixin spacing ($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin displaycontent ($flexdisplay, $centerjust) {
+  display: $flexdisplay;
+  justify-content: $centerjust;
+}

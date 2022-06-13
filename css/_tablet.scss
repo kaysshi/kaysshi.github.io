@@ -1,0 +1,14 @@
+/* tablet devices */
+@media only screen and (min-width: 834px) {
+    body {
+      display:$blockdisplay;
+    }
+    article {
+      padding: 0;
+    }
+    .main {
+      display: $flexdisplay;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  }

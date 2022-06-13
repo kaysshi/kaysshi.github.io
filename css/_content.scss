@@ -1,0 +1,141 @@
+body {
+  background-color: $blue-color;
+  @include spacing($zero, $zero);
+  font-family: $main-font;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $heading-font;
+}
+
+h1 {
+  font-size: $heading-size;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  color: $brown-color;
+  ;
+}
+
+a:hover {
+  text-decoration: $none;
+}
+
+header {
+  border-bottom: 10px solid $orange-color;
+}
+
+nav ul {
+  @include spacing($zero, $zero);
+  list-style-type: $none;
+  @include displaycontent ($flexdisplay, $centerjust);
+}
+
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+
+nav .logo img {
+  max-width: 150px;
+}
+
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav a {
+  color: $grey-color;
+  text-decoration: $none;
+  display: $blockdisplay;
+}
+
+nav a:hover {
+  color: $orange-color;
+}
+
+.main-bkgd {
+  background: $white-color url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+  display: grid;
+  grid-template-columns: 4, 1fr;
+}
+
+.main {
+  max-width: 1200px;
+  @include spacing(0 auto, 2 rem);
+  @include displaycontent ($flexdisplay, $centerjust);
+  flex-flow: row wrap;
+
+}
+
+article {
+  padding: 25px;
+}
+
+picture {
+  margin: 3rem 0 0 0;
+  border-radius: $radius;
+  ;
+  width: 100%;
+}
+
+picture img {
+  margin: 1rem;
+  border-radius: $radius;
+  ;
+}
+
+.button {
+  display: inline-block;
+  background-color: $brown-color;
+  border-radius: $radius;
+  ;
+  @include spacing($zero, 0.5rem 1rem);
+  color: $grey-color;
+  text-decoration: $none;
+  border: 3px solid $brown-color;
+}
+
+.button:hover {
+  background-color: $grey-color;
+  color: $brown-color;
+}
+
+footer {
+  color: $grey-color;
+  text-align: center;
+  border-top: 10px solid $orange-color;
+
+  ul {
+    list-style-type: $none;
+    @include spacing($zero, $zero);
+    @include displaycontent ($flexdisplay, $centerjust);
+    flex-flow: row wrap;
+
+    a {
+      color: $grey-color;
+      font-size: 2rem;
+      display: $blockdisplay;
+      margin: 0 1rem 3rem 1rem;
+
+      p {
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.disclaimer {
+  padding: 15px;
+}
